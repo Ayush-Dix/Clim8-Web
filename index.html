@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="app-wrap">
+      <header>
+        <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+      </header>
+      <main>
+        <div class="placeholder" id="placeholder">
+          <img src="search.svg" alt="Search Illustration" id="illustration" />
+
+          <p class="placeholder-text">Search for a city to get the weather</p>
+        </div>
+
+        <section class="location" id="weather-section" style="display: none;">
+          <div class="city">--</div>
+          <div class="date">--</div>
+        </section>
+        <div class="current" id="weather-section-2" style="display: none;">
+          <div class="temp">--<span>°c</span></div>
+          <div class="weather">--</div>
+          <div class="hi-low">-- / --</div>
+          <div class="extra">
+            <p class="humidity">Humidity: --%</p>
+            <p class="wind">Wind Speed: -- m/s</p>
+            <img id="weather-icon" alt="Weather Icon" />
+          </div>
+        </div>
+
+        <div class="forecast" id="forecast-section" style="display: none;">
+          <h3>5-Day Forecast</h3>
+          <div class="forecast-container"></div>
+        </div>
+      </main>
+
+    </div>
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+  </body>
+
+</html>
